@@ -1,0 +1,34 @@
+body{
+  background: #000;
+  color: #94979a;
+}
+
+.bg-dark{
+  background-color: #000 !important;
+}
+
+header{
+  margin-bottom: 56px;
+}
+
+.content{
+  margin-top: 20px;
+}
+
+.content h2{
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+.content ul{
+  list-style: none;
+}
+
+.tiy-list li::before{
+  content: "-";
+  color: #e53041;
+  font-size: 40px;
+  display: inline-block;
+  margin-left: -1em;
+  width: 20px;
+
+}
