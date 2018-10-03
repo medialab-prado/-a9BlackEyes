@@ -38,9 +38,10 @@ tips on how people can better control what they are sharing about themselves onl
               <h4 class="text-white">Contact</h4>
               <ul class="list-unstyled">
                 <li><a href="#" class="text-white">About</a></li>
-                <li><a href="#" class="text-white">Puerta del Sol, Madrid</a></li>
-                <li><a href="#" class="text-white">How we made ‘this is you’</a></li>
-                <li><a href="#" class="text-white">Some ways to think about privacy on Instagram</a></li>
+                <li><a href="#puertasol" class="text-white">Puerta del Sol, Madrid</a></li>
+                <li><a href="#howwemade" class="text-white">How we made ‘this is you’</a></li>
+                <li><a href="#someways" class="text-white">Some ways to think about privacy on Instagram</a></li>
+                <li><a href="#othersettings" class="text-white">Other settings on your account</a></li>
               </ul>
             </div>
           </div>
@@ -67,17 +68,8 @@ tips on how people can better control what they are sharing about themselves onl
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img data-holder-rendered="true" src="img/logo.png" class="card-img-top" alt="Thumbnail [100%x225]">
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
+                <img data-holder-rendered="true" src="img/logo.png" alt="Thumbnail [100%x225]">
+                <img data-holder-rendered="true" src="img/this-is-you.png" class="card-img-top" alt="Thumbnail [100%x225]">
               </div>
             </div>
           </div>
@@ -86,7 +78,7 @@ tips on how people can better control what they are sharing about themselves onl
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Puerta del Sol, Madrid</h1>
+          <h1 id="puertasol" class="jumbotron-heading">Puerta del Sol, Madrid</h1>
           <p class="lead text-muted">The square ‘Puerta del Sol’ is Spain’s ‘kilometre zero’, the place from which all distances in Spain are measured. As such, it is an important public space, not only for Madrid, but for the entire country. It is constantly full of people – tourists, commuters, people out shopping, street performers – and the entire space is constantly being photographed and filmed. There is CCTV in the surrounding shops, government buildings and metro station, as well as in the buses themselves. Two webcams positioned at either end of the Puerta del Sol stream the activity on the square continuously and stream the footage online.</p>
 
         </div>
@@ -94,7 +86,7 @@ tips on how people can better control what they are sharing about themselves onl
 
       <section class="jumbotron text-center bg-light">
         <div class="container">
-          <h1 class="jumbotron-heading">How we made ‘this is you’</h1>
+          <h1 id="howwemade" class="jumbotron-heading">How we made ‘this is you’</h1>
           <p class="lead text-muted">We made ‘this is you’ using the public webcams that are continuously filming the Puerta del Sol and video stories shared on Instagram. The Instagram stories often contained location data about where they were taken, either because users added a ‘#puertadelsol’ hashtag, or because they had allowed Instagram access to their location, meaning that this information was automatically shared with all of their posts. By searching in Instagram for ‘puertadelsol’ under both places and hashtags, we were able to identify a large number of videos taken there. Instagram also shows the time that posts are shared and many users shared their stories immediately after creating the videos.</p>
 
 		  <p class="lead text-muted">The videos themselves also contain a huge amount of information. With satellite images from Google maps and the webcams we could quickly learn exactly where all the different features in the square – fountains, shops, metro entrances, bike stands – were. Then we could start to identify these same features in users’ videos to learn exactly where they were in the square at the time they took the video. Using the time data from the Instagram post, we could then look for the webcam footage in which they would appear and identify them quite quickly. From here, we were able to synchronise the webcam video and Instagram stories to present them side by side – this is you, taking a video on Puerta del Sol and uploading it to Instagram.</p>
@@ -104,7 +96,7 @@ tips on how people can better control what they are sharing about themselves onl
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Some ways to think about privacy on Instagram</h1>
+          <h1 id="someways" class="jumbotron-heading">Some ways to think about privacy on Instagram</h1>
           <p class="lead text-muted">By default, your Instagram account is public and your location is shared with each post or story that you make. For some accounts, it may be desirable to have photos and location visible to everyone – a famous museum, for example, where images to share are chosen carefully and where the museum’s location is well-known. Most Instagram users aren’t in that situation however. Having seen in this project just how much information can be learned from the images and videos you post, here are some things that you may want to consider doing to make your account more private.</p>
 
 		  <p class="lead text-muted">People setting their location as public within the Instagram app was one of the key things that allowed us to find their stories (the other was them adding hashtags with their location). It meant that every image and story they posted on Instagram was automatically shared together with their location at the time that they shared that post – in most cases that was also the place where they created the post, since they shared it immediately. We recommend not giving Instagram automatic access to your location and this is how you change that setting. You can still share the location of a post if you wish, using a hashtag, or simply writing it in the text of your post.</p>
@@ -120,8 +112,11 @@ tips on how people can better control what they are sharing about themselves onl
  		  <p class="lead text-muted">The fact that people typically shared their photos immediately after taking them was what allowed us to know where they were on Puerta del Sol and approximately when and then to find them on the webcam. It would have been much, much more difficult for us to do this (although not impossible) if people had posted their images and videos a significant time after the event. The longer that they waited to post to Instagram, the harder it is likely it would be to find the webcam footage of them taking the video. Latergramming can improve your privacy significantly. There is an important caveat to that however. Read on...</p>
 
  		  <p class="lead text-muted">Your images themselves can contain large amounts of information indicating when and where they were taken: day or night,;shadow length and direction can indicate the time of day (and even time of year); an event, such as a concert, on the square can show that your video is from a specific day and time; a construction project in the background of your image can place it within a timeframe of a few months. These are just a few examples.</p>
-
-		  <h2>Other settings on your account</h2>
+		</div>
+	  </section>
+      <section class="jumbotron text-center bg-light">
+        <div class="container">
+          <h1 id="othersettings" class="jumbotron-heading">Other settings on your account</h1>
 
 		  <p class="lead text-muted">Other than location, most settings are controlled from within the Instagram app, but the account settings can be hard to find. This is how to find them on Android and iOS.</p>
 
