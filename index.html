@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="img/logo.ico">
 
     <title>This is your site</title>
 
@@ -14,6 +14,14 @@
 
     <!-- Custom styles for this template -->
     <link href="css/album.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+    $('h3').click(function(){
+        $(this).next().toggle();
+    });
+});
+	</script>
   </head>
 
   <body>
@@ -68,7 +76,7 @@ tips on how people can better control what they are sharing about themselves onl
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img data-holder-rendered="true" src="img/logo.png" alt="Thumbnail [100%x225]">
+                <img data-holder-rendered="true" src="img/big-logo.png" alt="Thumbnail [100%x225]">
                 <img data-holder-rendered="true" src="img/this-is-you.png" class="card-img-top" alt="Thumbnail [100%x225]">
               </div>
             </div>
@@ -97,21 +105,24 @@ tips on how people can better control what they are sharing about themselves onl
       <section class="jumbotron text-center">
         <div class="container">
           <h1 id="someways" class="jumbotron-heading">Some ways to think about privacy on Instagram</h1>
-          <p class="lead text-muted">By default, your Instagram account is public and your location is shared with each post or story that you make. For some accounts, it may be desirable to have photos and location visible to everyone – a famous museum, for example, where images to share are chosen carefully and where the museum’s location is well-known. Most Instagram users aren’t in that situation however. Having seen in this project just how much information can be learned from the images and videos you post, here are some things that you may want to consider doing to make your account more private.</p>
+			<p class="lead text-muted">By default, your Instagram account is public and your location is shared with each post or story that you make. For some accounts, it may be desirable to have photos and location visible to everyone – a famous museum, for example, where images to share are chosen carefully and where the museum’s location is well-known. Most Instagram users aren’t in that situation however. Having seen in this project just how much information can be learned from the images and videos you post, here are some things that you may want to consider doing to make your account more private.</p>
 
-		  <p class="lead text-muted">People setting their location as public within the Instagram app was one of the key things that allowed us to find their stories (the other was them adding hashtags with their location). It meant that every image and story they posted on Instagram was automatically shared together with their location at the time that they shared that post – in most cases that was also the place where they created the post, since they shared it immediately. We recommend not giving Instagram automatic access to your location and this is how you change that setting. You can still share the location of a post if you wish, using a hashtag, or simply writing it in the text of your post.</p>
+			<p class="lead text-muted">People setting their location as public within the Instagram app was one of the key things that allowed us to find their stories (the other was them adding hashtags with their location). It meant that every image and story they posted on Instagram was automatically shared together with their location at the time that they shared that post – in most cases that was also the place where they created the post, since they shared it immediately. We recommend not giving Instagram automatic access to your location and this is how you change that setting. You can still share the location of a post if you wish, using a hashtag, or simply writing it in the text of your post.</p>
 
-		  <p class="lead text-muted">Your location settings are not changed within the Instagram app, they are changed in the main settings of your device.</p>
+			<p class="lead text-muted">Your location settings are not changed within the Instagram app, they are changed in the main settings of your device.</p>
 
-		  <p class="lead text-muted">On Android, go to the phone’s ‘settings’ menu, then select ‘apps’. Find Instagram in the list and select it it to open the ‘app info’ page. Select ‘permissions’ which will take you to a further page with a series of things on your phone that Instagram would potentially like access to, including the camera and storage, which are essential for the basic functioning of the app, as well as others, like access to your location and contacts, which are less essential. Use the sliders next to each setting to change whether Instagram has access to that.</p>
-
+			<p class="lead text-muted">On Android, go to the phone’s ‘settings’ menu, then select ‘apps’. Find Instagram in the list and select it it to open the ‘app info’ page. Select ‘permissions’ which will take you to a further page with a series of things on your phone that Instagram would potentially like access to, including the camera and storage, which are essential for the basic functioning of the app, as well as others, like access to your location and contacts, which are less essential. Use the sliders next to each setting to change whether Instagram has access to that.</p>
 		  <h3>#hashtags</h3>
-		  <p class="lead text-muted">Hashtags with the place where the video was taken were the other way in which we found the Instagram stories. If you do want to share the location of your image or story, hashtags are better because they have to be added post by post, meaning that you can’t add your location accidentally. They will still give away your location at a particular time if you’re not careful. For another way to think about that issue, read on.</p>
+		  <div class="collapsable">
+			<p class="lead text-muted">Hashtags with the place where the video was taken were the other way in which we found the Instagram stories. If you do want to share the location of your image or story, hashtags are better because they have to be added post by post, meaning that you can’t add your location accidentally. They will still give away your location at a particular time if you’re not careful. For another way to think about that issue, read on.</p>
+		  </div>
 
 		  <h3>#latergram</h3>
- 		  <p class="lead text-muted">The fact that people typically shared their photos immediately after taking them was what allowed us to know where they were on Puerta del Sol and approximately when and then to find them on the webcam. It would have been much, much more difficult for us to do this (although not impossible) if people had posted their images and videos a significant time after the event. The longer that they waited to post to Instagram, the harder it is likely it would be to find the webcam footage of them taking the video. Latergramming can improve your privacy significantly. There is an important caveat to that however. Read on...</p>
+		  <div class="collapsable">
+ 			<p class="lead text-muted">The fact that people typically shared their photos immediately after taking them was what allowed us to know where they were on Puerta del Sol and approximately when and then to find them on the webcam. It would have been much, much more difficult for us to do this (although not impossible) if people had posted their images and videos a significant time after the event. The longer that they waited to post to Instagram, the harder it is likely it would be to find the webcam footage of them taking the video. Latergramming can improve your privacy significantly. There is an important caveat to that however. Read on...</p>
 
- 		  <p class="lead text-muted">Your images themselves can contain large amounts of information indicating when and where they were taken: day or night,;shadow length and direction can indicate the time of day (and even time of year); an event, such as a concert, on the square can show that your video is from a specific day and time; a construction project in the background of your image can place it within a timeframe of a few months. These are just a few examples.</p>
+ 			<p class="lead text-muted">Your images themselves can contain large amounts of information indicating when and where they were taken: day or night,;shadow length and direction can indicate the time of day (and even time of year); an event, such as a concert, on the square can show that your video is from a specific day and time; a construction project in the background of your image can place it within a timeframe of a few months. These are just a few examples.</p>
+		  </div>
 		</div>
 	  </section>
       <section class="jumbotron text-center bg-light">
@@ -120,18 +131,25 @@ tips on how people can better control what they are sharing about themselves onl
 
 		  <p class="lead text-muted">Other than location, most settings are controlled from within the Instagram app, but the account settings can be hard to find. This is how to find them on Android and iOS.</p>
 
+
 		  <h3>Android</h3>
-		  <p class="lead text-muted">To get to your account settings, go to your profile by clicking the ‘person’ icon in the bottom right corner of the screen. On your profile page, click the hamburger menu in the top right corner. A menu will appear with a small number of options at the top (saved, discover people, open Facebook) and then, right at the bottom of the screen where you might not otherwise notice it, the settings option. Select this to go to the settings page.</p>
+		  <div class="collapsable">
+			<p class="lead text-muted">To get to your account settings, go to your profile by clicking the ‘person’ icon in the bottom right corner of the screen. On your profile page, click the hamburger menu in the top right corner. A menu will appear with a small number of options at the top (saved, discover people, open Facebook) and then, right at the bottom of the screen where you might not otherwise notice it, the settings option. Select this to go to the settings page.</p>
+		  </div>
 
 		  <h3>iOS</h3>
-		  <p class="lead text-muted">To get to your account settings, go to your profile by clicking the ‘person’ icon in the bottom right corner of the screen. On your profile page, the settings button is next to the ‘edit profile’ button (under the number of posts and followers you have). Select this to go to the settings page.</p>
+		  <div class="collapsable">
+			<p class="lead text-muted">To get to your account settings, go to your profile by clicking the ‘person’ icon in the bottom right corner of the screen. On your profile page, the settings button is next to the ‘edit profile’ button (under the number of posts and followers you have). Select this to go to the settings page.</p>
+		  </div>
 
 		  <h2>An open account or a private one?</h2>
 		  <p class="lead text-muted">With an open account, everyone can see your images. This may be important to you if you’re a photographer or artist and want people to discover your work, for example. With a private account, only your followers can see your images. People can request to follow you and you have to approve their request before they can see your images.</p>
 
 		  <h3>How to make your account private</h3>
-		  <p class="lead text-muted">You can make your account private in your account settings. The ‘private account’ option is halfway down the page. Slide the button to set your account to private.</p>
-		  <p class="lead text-muted">(The private account option slider can also be found further down this menu under ‘account privacy’.)</p>
+		  <div class="collapsable">
+			<p class="lead text-muted">You can make your account private in your account settings. The ‘private account’ option is halfway down the page. Slide the button to set your account to private.</p>
+			<p class="lead text-muted">(The private account option slider can also be found further down this menu under ‘account privacy’.)</p>
+		  </div>
 
         </div>
       </section>
