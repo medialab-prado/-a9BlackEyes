@@ -11,17 +11,17 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/album.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 $(document).ready(function(){
-    $('h3').click(function(){
+    $('h3,h2').click(function(){
         $(this).next().toggle();
     });
 });
 	</script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/album.css" rel="stylesheet">
   </head>
 
   <body>
@@ -76,8 +76,8 @@ tips on how people can better control what they are sharing about themselves onl
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <img data-holder-rendered="true" src="img/big-logo.png" alt="Thumbnail [100%x225]">
-                <img data-holder-rendered="true" src="img/this-is-you.png" class="card-img-top" alt="Thumbnail [100%x225]">
+                <!-- <img data-holder-rendered="true" src="img/big-logo.png" alt="Thumbnail [100%x225]"> -->
+                <img data-holder-rendered="true" src="img/this-is-you.png" class="card-img-top center" alt="Thumbnail [100%x225]">
               </div>
             </div>
           </div>
@@ -143,8 +143,9 @@ tips on how people can better control what they are sharing about themselves onl
 		  </div>
 
 		  <h2>An open account or a private one?</h2>
-		  <p class="lead text-muted">With an open account, everyone can see your images. This may be important to you if you’re a photographer or artist and want people to discover your work, for example. With a private account, only your followers can see your images. People can request to follow you and you have to approve their request before they can see your images.</p>
-
+		  <div class="collapsable">
+			<p class="lead text-muted">With an open account, everyone can see your images. This may be important to you if you’re a photographer or artist and want people to discover your work, for example. With a private account, only your followers can see your images. People can request to follow you and you have to approve their request before they can see your images.</p>
+		  </div>
 		  <h3>How to make your account private</h3>
 		  <div class="collapsable">
 			<p class="lead text-muted">You can make your account private in your account settings. The ‘private account’ option is halfway down the page. Slide the button to set your account to private.</p>
@@ -170,9 +171,7 @@ tips on how people can better control what they are sharing about themselves onl
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/popper.js"></script>
+	<script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/holder.js"></script>
 
